@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header"></header>
+
+  <h2 id="topLabel">마이 페이지</h2>
+  <div class="signup_information">
+    <ul class="label">
+      <li>
+        <label class="labelName" for="name">이름</label>
+        <input type="text" maxlength="20" size="50">
+      </li>
+      <li>
+        <label class="labelName" for="age">나이</label>
+        <input type="number" min=15 max=120 size="50">
+      </li>
+      <li>
+        <label class="labelName" for="email">E-mail*</label>
+        <input type="text" maxlength="30" size="30">@<input type="text" id="inputDomain" size="15">
+        <select id="select_domain" onchange="selectDomain(this)">
+          <option value="self" selected>직접 입력</option>
+          <option value="google.com">Google</option>
+          <option value="naver.com">Naver</option>
+          <option value="daum.net">Daum - daum</option>
+          <option value="hanmail.net">Daum - hanmail</option>
+          <option value="kakao.net">Daum - kakao</option>
+          <option value="yahoo.com">Yahoo</option>
+        </select>
+      </li>
+      <li>
+        <label class="labelName" for="id">ID*</label>
+        <input type="text" maxlength="30" size="50">
+      </li>
+      <li>
+        <label class="labelName" for="pw">Password*</label>
+        <input type="password" maxlength="30" size="50">
+      </li>
+      <li>
+        <label class="labelName" for="sex">성별</label>
+        <input type="radio" name="sex" value="남">남
+        <input type="radio" name="sex" value="여">여
+      </li>
+      <li>
+        <label class="labelName" for="height">키* (cm)</label>
+        <input type="number" min=120 max=230 size="50">
+      </li>
+      <li>
+        <label class="labelName" for="weight">몸무게* (kg)</label>
+        <input type="number" min=30 max=150 size="50">
+      </li>
+      <li>
+        <label class="labelName" for="bmi">BMI</label>
+        <input type="text" value="24.8" readonly>
+      </li>
+    </ul>
+  </div>
+  <div id="signupButton">
+    <input type="button" value="회원가입">
+  </div>
+  <footer id="footer"></footer>
+</body>
+
+</html>
