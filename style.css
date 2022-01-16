@@ -1,55 +1,20 @@
-html, body {
-  margin: 0;
+html {
+  margin: 0 auto;
   padding: 0;
   height: 100%;
+  width: 90%;
+  position: relative;
+}
+footer {
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .wrapper {
-  min-height:100%;
   width: 90%;
   margin: 0 auto;
   position: relative;
-}
-
-.label {
-  list-style: none;
-  margin: auto;
-  padding: 0;
-}
-
-#topLabel {
-  font-size: 50px;
-  font-style: normal;
-  font-family: "Cafe24 SSurround air";
-  text-align: center;
-}
-
-#IdArea, #PwArea {
-  padding: 10px;
-  margin: 30px;
-  width: 90%;
-}
-
-.headName {
-  font-size: 30px;
-  font-style: normal;
-  font-family: "Cafe24 Ssurround air";
-  text-align: left;
-  padding: 10px;
-  margin: 0%;
-}
-
-.labelName {
-  height: 20px;
-  width: 100px;
-  display: inline-block;
-  text-align: center;
-  margin: 0px auto;
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Cafe24 Ssurround air";
-  padding: 2px;
-  margin: 2px;
 }
 
 li {
@@ -59,9 +24,185 @@ li {
   align-items: center;
 }
 
-#footer {
+/* button */
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+button, button a {
+  text-decoration: none;
+  font-family: "Cafe24 Ssurround air";
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.blueButton {
+      padding: 2px 50px;
+      border: 0px;
+      outline: 0px;
+      border-radius: 10px;
+      background-color: rgb(64, 190, 235);
+}
+.redButton {
+      padding: 2px 50px;
+      border: 0px;
+      outline: 0px;
+      border-radius: 10px;
+      background-color: rgb(235, 64, 64);
+}
+.grayButton {
+      padding: 2px 50px;
+      border: 0px;
+      outline: 0px;
+      border-radius: 10px;
+      background-color: rgb(83, 79, 79);
+}
+
+/* main 영역 */
+.label {
+  list-style: none;
+  padding: 0;
+}
+
+.iframe {
+  display: block;
+  border: none;
+  height: 100%;
   width: 100%;
-  height: 40px;
-  position: absolute;
-  transform: translateY(-100%);
+}
+
+#top_label {
+  font-size: 50px;
+  font-style: normal;
+  font-family: "Cafe24 SSurround air";
+  text-align: center;
+}
+
+#area {
+  padding: 10px;
+  margin: 30px;
+}
+
+.finder_name {
+  display: flex;
+  font-size: 30px;
+  font-style: normal;
+  font-family: "Cafe24 Ssurround air";
+  margin: auto 10%;
+}
+
+.label_name {
+  height: 20px;
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Cafe24 Ssurround air";
+  margin: auto 3%;
+}
+
+/* 운동정보 리스트
+Exercise_List */
+#list_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 140px;
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.card a {
+  text-decoration: none;
+  color: black;
+}
+.card_text h2 {
+  font-family: "Cafe24 Ssurround air";
+  margin: 10px auto;
+  align-items: center;
+}
+.card_text {
+  font-family: "Cafe24 Ssurround air";
+  font-size: 10px;
+}
+#exer_list_topic_table ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+#exer_list_topic_table li {
+  margin: 0 auto;
+  align-content: center;
+}
+#exer_list_topic_table a {
+  text-decoration: none;
+  color: black;
+  font-family: "Cafe24 Ssurround air";
+  font-style: normal;
+  font-weight: border;
+}
+
+/* 공지사항 */
+.border_inner {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.border_inner p, .border_inner textarea, .border_inner input[type="text"] {
+  width: 96%;
+  font-family: "Cafe24 Ssurround air";
+  font-size: 14px;
+}
+
+.border_label {
+  font-family: "Cafe24 Ssurround air";
+  font-size: 20px;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 10px auto;
+  padding: 0 2%;
+}
+
+.border_title {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0 auto;
+  margin: 10px auto;
+}
+
+.border_textarea {
+  height: 500px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0 auto;
+  margin: 10px auto;
+}
+
+/* 공지사항 사용자, 관리자가 일반적으로 보는 제목과 내용 */
+.border_title p, .border_textarea p {
+  padding: 0 10px;
+}
+
+/* 공지사항 - 등록 관리자
+Notice_Detail_update_Oper */
+.notice_update_text {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+}
+
+.border_textarea h4 {
+  padding: 0 2%;
 }
