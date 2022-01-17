@@ -8,48 +8,69 @@
   <title>ID / PW 찾기</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico">
+  <style>
+    ::placeholder {
+      color: gray;
+      font-family: "Bradley hand ITC";
+      /* font-family: "60sSTRIPE"; */
+      font-style: italic;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    li {
+      height: 80px;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 10px auto;
+    }
+  </style>
 </head>
 
 <body>
   <!-- header area -->
   <header id="header">
-      <iframe src="header_login.html" scrolling="no" class="iframe"></iframe>
+    <iframe src="header_login.html" scrolling="no" class="iframe"></iframe>
   </header>
   <!-- 메인 부분 -->
   <main class="wrapper">
-    <h2 id="top_label">ID / PW 찾기</h2>
+    <h2 id="top_label">FIND ID & PW</h2>
     <!-- ID 검색 필드 -->
     <div id="area">
-      <h2 class="finder_name">아이디 찾기</h2>
-      <ul class="label">
-        <li>
-          <label class="label_name">이름</label>
-          <input type="text" maxlength="30" size="50">
+      <ul class="label_id">
+        <li class="find_info_header">
+          <h2 class="finder_name">FIND YOUR ID</h2>
         </li>
-        <li>
-          <label class="label_name">E-mail</label>
-          <input type="email" maxlength="30" size="50">
+        <li class="user_input_blue">
+          <input type="text" class="user_input_white" size="50" placeholder=" Input your NAME" readonly>
+          <input class="user_input_white" type="text" name="user_Id" size="48">
+        </li>
+        <li class="user_input_blue">
+          <input type="text" class="user_input_white" size="50" placeholder=" Input your E-mail" readonly>
+          <input class="user_input_white" type="text" name="user_Id" size="48">
         </li>
       </ul>
     </div>
     <!-- PW 검색 필드 -->
     <div id="area">
-      <h2 class="finder_name">비밀번호 찾기</h2>
-      <ul class="label">
-        <li>
-          <label class="label_name">ID</label>
-          <input type="text" maxlength="30" size="50">
+      <ul class="label_pw">
+        <li class="find_info_header">
+          <h2 class="finder_name">FIND YOUR PW</h2>
         </li>
-        <li>
-          <label class="label_name">E-mail</label>
-          <input type="email" maxlength="50" size="50">
+        <li class="user_input_pink">
+          <input type="text" class="user_input_white" size="50" placeholder=" Input your ID" readonly>
+          <input class="user_input_white" type="text" name="user_Id" size="48">
+        </li>
+        <li class="user_input_pink">
+          <input type="text" class="user_input_white" size="50" placeholder=" Input your E-mail" readonly>
+          <input class="user_input_white" type="text" name="user_Id" size="48">
         </li>
       </ul>
     </div>
   </main>
   <!-- footer area -->
   <footer id="footer">
-      <iframe src="footer.html" scrolling="no" class="iframe"></iframe>
+    <iframe src="footer.html" scrolling="no" class="iframe"></iframe>
   </footer>
 </body>
 
