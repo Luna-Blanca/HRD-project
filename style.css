@@ -1,26 +1,116 @@
 html {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   height: 100%;
-  /* width: 90%; */
-  position: relative;
 }
 
 body {
-  height: 1079px;
-}
-
-footer {
-  height: 60px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.wrapper {
-  width: 90%;
   margin: 0 auto;
-  position: relative;
+  padding: 0 auto;
+  height: 100%;
 }
+
+main {
+  height: 1079px;
+  background-image: url("running-track-g158557ac0_1920.jpg");
+  overflow: hidden;
+}
+
+/* header 부분 */
+header {
+  background-color: rgb(54, 52, 52);
+}
+
+.header_title a {
+  height: 90%;
+  width: 300px;
+  font-family: "Papyrus";
+  font-size: 70px;
+  color: white;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  text-decoration: none;
+}
+
+
+.header_nav {
+  float: right;
+}
+
+.header_nav_menu {
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  display: flex;
+}
+
+.header_nav_menu a {
+  font-family: "Papyrus";
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* 메인화면 */
+body {
+  margin: 0px;
+}
+
+.main_panel {
+  display: flex;
+}
+
+.blur_box {
+  display: flex;
+  height: 400px;
+  width: 700px;
+  background-color: #FFFFFF10;
+  backdrop-filter: blur(12px);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.white_box {
+  display: flex;
+  height: 300px;
+  width: 600px;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  border: 5px solid white;
+}
+
+h3.main_title {
+  font-size: 50px;
+  padding: 0 10px;
+}
+
+h1.main_title {
+  font-size: 80px;
+  padding: 0 10px;
+}
+
+.main_title {
+  font-family: "Bauhaus 93";
+  font-style: normal;
+  color: white;
+  align-content: center;
+  text-align: center;
+  margin: 10px auto;
+  letter-spacing: 20px;
+}
+
+/* ??? */
 
 li {
   display: flex;

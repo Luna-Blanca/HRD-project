@@ -5,77 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>상세 운동 정보</title>
+  <title>메인 화면</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico">
-  <style>
-    header {
-      background-color: rgb(54, 52, 52);
-      color: white;
-    }
-
-    body {
-      margin: 0px;
-      background-image: url("running-track-g158557ac0_1920.jpg");
-    }
-
-    section {
-      display: flex;
-      margin: 300px auto;
-      justify-content: center;
-    }
-
-    #main_panel {
-      border: 5px solid white;
-    }
-
-    #main_top_panel {
-      height: 300px;
-      background-color: #FFFFFF10;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-
-    h3#main_title {
-      font-size: 50px;
-      padding: 0 10px;
-    }
-
-    h1#main_title {
-      font-size: 80px;
-      padding: 0 10px;
-    }
-
-    #main_title {
-      font-family: "Bauhaus 93";
-      font-style: normal;
-      color: white;
-      align-content: center;
-      text-align: center;
-      margin: 10px auto;
-      letter-spacing: 20px;
-    }
-  </style>
 </head>
 
 <body>
   <!-- header area -->
-  <header id="header">
-    <iframe src="header_login copy.html" scrolling="no" class="iframe"></iframe>
+  <header>
+    <iframe src="header_login.html" scrolling="no" class="iframe"></iframe>
   </header>
   <!-- main area -->
-  <section>
-    <div id="main_top_panel">
-      <div id="main_panel">
-        <h3 id="main_title">WELCOME TO</h3>
-        <h1 id="main_title">CALOLESS</h1>
+  <main class="main_panel">
+    <button class="blur_box">
+      <div class="white_box">
+        <h3 class="main_title">WELCOME TO</h3>
+        <h1 class="main_title">CALOLESS</h1>
       </div>
-    </div>
-  </section>
-  <!-- footer area -->
-  <footer id="footer">
-    <iframe src="footer copy.html" scrolling="no" class="iframe"></iframe>
-  </footer>
+    </button>
+  </main>
 </body>
 
 </html>
