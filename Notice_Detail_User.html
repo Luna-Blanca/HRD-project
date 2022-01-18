@@ -16,26 +16,28 @@
     <iframe src="header_login.html" scrolling="no" class="iframe"></iframe>
   </header>
   <!-- main area -->
-  <h2 id="top_label">공지사항</h2>
-  <main class="wrapper">
-    <section id="notice">
-      <div class="border_inner">
-        <div class="border_title">
-          <p>제목</p>
-        </div>
-        <div class="border_textarea">
-          <p>내용</p>
-        </div>
+  <main class="main_notice_panel">
+    <h2 class="panel_label">Notice</h2>
+    <form class="notice_form" action="">
+      <ul class="notice_panel_ul">
+        <li>
+          <div class="notice_title">
+            <h4 class="notice_name">Title</h4>
+          </div>
+        </li>
+        <li>
+          <div class="notice_textarea">
+            <p class="notice_text">test</p>
+          </div>
+        </li>
+      </ul>
+      <div class="mypage_button_area">
+        <button class="gray_button" type="button">Back</button>
+        <button class="empty_button" type="button">Modify</button>
       </div>
-    </section>
-    <section class="button">
-      <button class="grayButton" type="menu">이전 페이지</button>
-    </section>
+    </form>
   </main>
   <!-- footer area -->
-  <footer id="footer">
-    <iframe src="footer.html" scrolling="no" class="iframe"></iframe>
-  </footer>
 </body>
 
 </html>

@@ -3,24 +3,33 @@ html {
   padding: 0;
   height: 100%;
 }
-
 body {
   margin: 0 auto;
   padding: 0 auto;
   height: 100%;
 }
-
 main {
   height: 1079px;
   background-image: url("running-track-g158557ac0_1920.jpg");
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.label_name {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Papyrus";
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 /* header 부분 */
 header {
   background-color: rgb(54, 52, 52);
 }
-
 .header_title a {
   height: 90%;
   width: 300px;
@@ -28,25 +37,22 @@ header {
   font-size: 70px;
   color: white;
   display: flex;
+  padding: 0 30px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   float: left;
   text-decoration: none;
 }
-
-
 .header_nav {
   float: right;
 }
-
 .header_nav_menu {
   list-style: none;
   margin: 0px;
   padding: 0;
   display: flex;
 }
-
 .header_nav_menu a {
   font-family: "Papyrus";
   font-size: 16px;
@@ -60,26 +66,27 @@ header {
   padding: 10px;
 }
 
-/* 메인화면 */
+/* 메인 화면 */
 body {
   margin: 0px;
 }
-
 .main_panel {
   display: flex;
 }
-
 .blur_box {
   display: flex;
-  height: 400px;
-  width: 700px;
+  width: 70%;
+  height: 700px;
+  /* height: 400px; */
+  /* width: 700px; */
   background-color: #FFFFFF10;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
   margin: auto;
+  border: 3px solid hsla(0, 3%, 46%, 0.3);
+  border-radius: 40px;
 }
-
 .white_box {
   display: flex;
   height: 300px;
@@ -89,17 +96,14 @@ body {
   margin: auto;
   border: 5px solid white;
 }
-
 h3.main_title {
   font-size: 50px;
   padding: 0 10px;
 }
-
 h1.main_title {
   font-size: 80px;
   padding: 0 10px;
 }
-
 .main_title {
   font-family: "Bauhaus 93";
   font-style: normal;
@@ -110,13 +114,463 @@ h1.main_title {
   letter-spacing: 20px;
 }
 
-/* ??? */
-
-li {
+/* 로그인 화면 */
+.main_login_panel {
+  align-items: center;
+}
+.login_panel {
+display: flex;
+height: 700px;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF10;
+  backdrop-filter: blur(10px);
+  border: 3px solid hsla(0, 3%, 46%, 0.3);
+  border-radius: 40px;
+}
+.panel_label {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-style: normal;
+  font-family: "Papyrus";
+  margin: 60px auto;
+}
+.login_panel_ul {
+  height: 100%;
+  width: 30%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient( to top, hsla(0, 0%, 100%, 0.5), rgba(0, 0, 0, 0.8) ); */
+  background-color: #FFFFFF10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.login_panel_ul li {
+  list-style: none;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login_panel_ul li input {
+  background: none;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.login_panel_ul li input:focus {
+  outline: none;
+}
+.login_label_name {
+  display: flex;
+  height: 50px;
+  font-size: 14px;
+  font-family: "Papyrus";
+  margin: auto;
+  align-items: center;
+}
+
+/* 아이디 비번 찾기 화면 */
+.main_find_panel {
+  display: flex;
+  justify-content: center;
+}
+.find_panel_ul {
+  height: 100%;
+  width: 30%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient( to top, hsla(0, 0%, 100%, 0.5), rgba(0, 0, 0, 0.8) ); */
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.find_panel_ul li {
+  list-style: none;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.find_panel_ul li input {
+  background: none;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.find_panel_ul li input:focus {
+  outline: none;
+}
+.find_label {
+  display: flex;
+  font-size: 20px;
+  font-family: "Papyrus";
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #888282;
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  height: 60px;
+  width: 400px;
+  border: none;
+}
+.find_label_name {
+  display: flex;
+  height: 50px;
+  font-size: 14px;
+  font-family: "Papyrus";
+  margin: auto;
+  align-items: center;
+}
+
+/* 회원가입 */
+.main_sign_panel {
+  display: flex;
+  justify-content: center;
+}
+.sign_panel_ul {
+  height: 100%;
+  width: 30%;
+  padding: 0;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.sign_panel_ul li {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign_panel_ul li input {
+  background: none;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sign_label_name {
+  display: flex;
+  height: 30px;
+  width: 80px;
+  font-size: 14px;
+  font-family: "Papyrus";
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.sign_p {
+  font-family: "Cafe24 Ssurround air";
+  text-align: center;
+  height: 10px;
+  font-size: 10px;
+  margin: 0 auto;
+}
+.sign_radio {
+  display: flex;
+}
+
+/* 마이 페이지 */
+.mypage_button_area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sign_label_name_id {
+  width: 310px;
+}
+.sign_label_name_id:focus {
+  outline: none;
+}
+
+/* 공지사항 관리자 */
+.notice_name {
+  font-family: "Cafe24 Ssurround air";
+  height: 20px;
+  width: 96%;
+  margin: 5px auto;
+  vertical-align: middle;
+}
+.notice_text {
+  font-family: "Cafe24 Ssurround air";
+  height: 20px;
+  width: 96%;
+  margin: 5px auto;
+  vertical-align: middle;
+}
+.notice_title {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 96%;
+}
+.notice_textarea {
+  height: 620px;
+  width: 96%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+/* 공지사항 등록 관리자 */
+.main_notice_panel {
+  display: flex;
+  justify-content: center;
+}
+.notice_panel_ul {
+  height: 700px;
+  width: 50%;
+  padding: 0;
+  margin: 10px auto;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.notice_panel_ul li {
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.notice_label_name {
+  display: flex;
+  height: 30px;
+  width: 80px;
+  font-size: 14px;
+  font-family: "Papyrus";
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
+.notice_panel_ul li input {
+  background: none;
+  height: 20px;
+  width: 96%;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  display: inline-block;
+}
+.notice_update_text {
+  resize: none;
+  margin: 0 auto;
+  width: 96%;
+  height: 590px;
+  /* background: rgba(128, 128, 128, 0.4); */
+  background: none;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+}
+
+/* 운동기록지 리스트 */
+.main_list_panel {
+  align-items: center;
+}
+.list_panel {
+display: flex;
+height: 90%;
+  width: 70%;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #FFFFFF10;
+  backdrop-filter: blur(10px);
+  border: 3px solid hsla(0, 3%, 46%, 0.3);
+  border-radius: 40px;
+}
+.list_panel_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-style: normal;
+  font-family: "Papyrus";
+  margin: 20px auto;
+}
+.list_label_name {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Papyrus";
+  padding: 0 5px;
+  margin: 5px auto;
+  align-items: center;
+  justify-content: left;
+}
+.list_panel_ul {
+  max-height: 800px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 90%;
+  padding: 0;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff60;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.list_panel_ul li {
+  list-style: none;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list_panel_ul li p {
+  font-family: "Cafe24 Ssurround air";
+  margin: 3px auto;
+}
+ul::-webkit-scrollbar{
+  width: 8px;
+}
+ul::-webkit-scrollbar-thumb{
+  height: 10%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+ul::-webkit-scrollbar-track{
+  background-color: rgba(0,0,0,0);
+  display: none;
+}
+
+/* 운동기록지 등록 */
+.main_record_panel {
+  align-items: center;
+}
+.record_panel {
+display: flex;
+height: 700px;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF10;
+  backdrop-filter: blur(10px);
+  border: 3px solid hsla(0, 3%, 46%, 0.3);
+  border-radius: 40px;
+}
+.panel_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-style: normal;
+  font-family: "Papyrus";
+  margin: 60px auto;
+}
+.record_panel_ul {
+  height: 100%;
+  width: 70%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.record_panel_ul li {
+  list-style: none;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.record_panel_ul li input {
+  background: none;
+  font-family: "Papyrus";
+  height: 30px;
+  width: 120%;
+  margin: 0px 10px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  display: inline-block;
+}
+.record_panel_ul ::placeholder {
+  font-family: "Papyrus";
+  font-size: 10px;
+  font-variant: small-caps;
+  color: black;
+}
+.record_panel_ul p {
+  font-family: "Papyrus";
+  margin: 0 auto;
+  display: flex;
+}
+.record_label_name {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Papyrus";
+  margin: 5px auto;
+  align-items: center;
+  justify-content: center;
+}
+.record_grayButton {
+  padding: 5px 50px;
+  margin: 20px auto;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: rgba(131, 148, 155, 0.3);
+  font-family: "Papyrus";
+}
+select::-ms-expand { 
+	display: none;
+}
+select {
+  font-family: "Papyrus";
+  font-size: 10px;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 120%;
+  height: 34px;
+  background: none;
+  padding: 5px 0px 5px 10px;
+  margin: 0 10px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 4px;
+  outline: 0 none;
+}
+select option {
+  font-family: "Papyrus", "Cafe24 Ssurround air";
+  font-size: 16px;
+  font-variant: small-caps;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0);
+  padding: 0 auto;
+}
+
 
 /* button */
 .button {
@@ -125,7 +579,6 @@ li {
   justify-content: space-between;
   margin: 20px auto;
 }
-
 button, button a {
   text-decoration: none;
   font-family: "Cafe24 Ssurround air";
@@ -133,26 +586,46 @@ button, button a {
   font-size: 16px;
   font-weight: bold;
 }
-.blueButton {
-      padding: 2px 50px;
-      border: 0px;
-      outline: 0px;
-      border-radius: 10px;
-      background-color: rgb(64, 190, 235);
-}
-.redButton {
-      padding: 2px 50px;
-      border: 0px;
-      outline: 0px;
-      border-radius: 10px;
-      background-color: rgb(235, 64, 64);
-}
 .grayButton {
-      padding: 2px 50px;
-      border: 0px;
-      outline: 0px;
-      border-radius: 10px;
-      background-color: rgb(83, 79, 79);
+  padding: 5px 50px;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: rgba(131, 148, 155, 0.3);
+  font-family: "Papyrus";
+}
+.blue_button {
+  padding: 5px 50px;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: rgb(64, 190, 235);
+  font-family: "Papyrus";
+}
+.red_button {
+  padding: 5px 50px;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: rgb(235, 64, 64);
+  font-family: "Papyrus";
+}
+.gray_button {
+  padding: 5px 50px;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: rgb(83, 79, 79);
+  font-family: "Papyrus";
+}
+.empty_button {
+  padding: 5px 50px;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: rgba(83, 79, 79, 0);
+  color: #7d90b100;
+  font-family: "Papyrus";
 }
 
 /* main 영역 */
@@ -191,30 +664,6 @@ button, button a {
   font-family: "Bradley hand ITC";
   font-style: italic;
   font-weight: bold;
-}
-
-.label_name {
-  height: 20px;
-  width: 100px;
-  display: inline-block;
-  text-align: right;
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Cafe24 Ssurround air";
-  margin: auto 2%;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 로그인 영역 */
-.login_panel_ul li {
-  padding: 0 auto;
-  margin: 20px auto;
-}
-
-.login_panel_ul {
-  padding: 0;
-
 }
 
 /* 아이디 비번 찾기 */
@@ -337,15 +786,6 @@ Exercise_List */
 }
 
 /* 공지사항 - 등록 관리자
-Notice_Detail_update_Oper */
-.notice_update_text {
-  display: flex;
-  justify-content: center;
-  margin: 10px auto;
-  height: 20px;
-  border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
-}
 
 .border_textarea h4 {
   padding: 0 2%;

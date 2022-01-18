@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>상세 운동 정보</title>
+  <title>로그인 화면</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico">
 </head>
+
 <body>
   <!-- header area -->
   <header id="header">
     <iframe src="header_login.html" scrolling="no" class="iframe"></iframe>
-</header>
-<!-- main area -->
-<main>
-  <div class="login_panel">
-    <h2 id="top_label">Log in</h2>
-    <ul class="login_panel_ul">
-      <li>
-        <h2 class="label_name">아이디</h2>
-        <input type="text" maxlength="30" size="40">
-      </li>
-      <li>
-        <h2 class="label_name">비밀번호</h2>
-        <input type="text" maxlength="30" size="40">
-      </li>
-      <li>
-        <button class="blueButton" type="submit">로그인</button>
-      </li>
-    </ul>
-  </div>
-</main>
-<!-- footer area -->
-<footer id="footer">
-  <iframe src="footer.html" scrolling="no" class="iframe"></iframe>
-</footer>
+  </header>
+  <!-- main area -->
+  <main class="main_login_panel">
+    <div class="login_panel">
+      <h2 class="panel_label">Log in</h2>
+      <form class="login_form" action="">
+        <ul class="login_panel_ul">
+          <li>
+            <h2 class="login_label_name">Input your ID</h2>
+            <input type="text" maxlength="30" size="40">
+          </li>
+          <li>
+            <h2 class="login_label_name">Input your Password</h2>
+            <input type="text" maxlength="30" size="40">
+          </li>
+          <li>
+            <button class="grayButton" type="button">Log in</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </main>
 </body>
+
 </html>
