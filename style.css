@@ -337,13 +337,27 @@ height: 700px;
   justify-content: center;
 }
 .notice_panel_ul {
-  height: 700px;
-  width: 50%;
-  padding: 0;
+  max-height: 700px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 70%;
+  padding: 10px 0px ;
   margin: 10px auto;
   background-color: #ffffff10;
   backdrop-filter: blur(10px);
   border-radius: 20px;
+}
+.notice_panel_ul::-webkit-scrollbar{
+  width: 8px;
+}
+.notice_panel_ul::-webkit-scrollbar-thumb{
+  height: 10%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+.notice_panel_ul::-webkit-scrollbar-track{
+  background-color: rgba(0,0,0,0);
+  display: none;
 }
 .notice_panel_ul li {
   list-style: none;
@@ -534,15 +548,6 @@ height: 700px;
   align-items: center;
   justify-content: center;
 }
-.record_grayButton {
-  padding: 5px 50px;
-  margin: 20px auto;
-  border: 0px;
-  outline: 0px;
-  border-radius: 10px;
-  background-color: rgba(131, 148, 155, 0.3);
-  font-family: "Papyrus";
-}
 select::-ms-expand { 
 	display: none;
 }
@@ -569,6 +574,61 @@ select option {
   background: rgba(0, 0, 0, 0.1);
   color: rgb(0, 0, 0);
   padding: 0 auto;
+}
+
+/* 운동정보 상세 */
+.main_info_panel {
+  display: flex;
+  justify-content: center;
+}
+.info_panel_ul {
+  max-height: 700px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 70%;
+  padding: 10px 0px ;
+  margin: 10px auto;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.info_panel_ul::-webkit-scrollbar{
+  width: 8px;
+}
+.info_panel_ul::-webkit-scrollbar-thumb{
+  height: 10%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+.info_panel_ul::-webkit-scrollbar-track{
+  background-color: rgba(0,0,0,0);
+  display: none;
+}
+.info_panel_ul li {
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.info_label_name {
+  display: flex;
+  height: 30px;
+  width: 80px;
+  font-size: 14px;
+  font-family: "Papyrus";
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.info_panel_ul li input {
+  background: none;
+  height: 20px;
+  width: 96%;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  display: inline-block;
 }
 
 
@@ -625,6 +685,33 @@ button, button a {
   border-radius: 10px;
   background-color: rgba(83, 79, 79, 0);
   color: #7d90b100;
+  font-family: "Papyrus";
+}
+.record_gray_button {
+  padding: 5px 50px;
+  margin: 20px auto;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: rgba(131, 148, 155, 0.3);
+  font-family: "Papyrus";
+}
+.record_blue_button {
+  padding: 5px 50px;
+  margin: 20px auto;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: rgb(64, 190, 235);
+  font-family: "Papyrus";
+}
+.record_red_button {
+  padding: 5px 50px;
+  margin: 20px auto;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  background-color: rgb(235, 64, 64);
   font-family: "Papyrus";
 }
 
