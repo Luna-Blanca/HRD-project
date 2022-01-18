@@ -605,18 +605,57 @@ select option {
   display: none;
 }
 .info_panel_ul li {
+  width: 90%;
+  max-height: none;
   list-style: none;
-  margin: 0 auto;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin: 10px auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-direction: column;
+}
+.info_panel_ul li p {
+  font-family: "Cafe24 Ssurround air";
+  padding: 10 10px;
+  margin: 0 10px;
+}
+.info_final_p {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.info_panel_ul li textarea {
+  resize: none;
+  margin: 0 auto;
+  width: 98%;
+  background: none;
+  border: none;
+  font-family: "Cafe24 Ssurround air";
+  padding: 10 10px;
+}
+.info_panel_ul li textarea::-webkit-scrollbar{
+  width: 8px;
+}
+.info_panel_ul li textarea::-webkit-scrollbar-thumb{
+  height: 10%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+.info_panel_ul li textarea::-webkit-scrollbar-track{
+  background-color: rgba(0,0,0,0);
+  display: none;
+}
+.info_final_textarea {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .info_label_name {
   display: flex;
   height: 30px;
-  width: 80px;
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Papyrus";
   margin: auto;
   justify-content: center;
@@ -629,6 +668,18 @@ select option {
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: 5px;
   display: inline-block;
+}
+.info_headline {
+  font-family: "Cafe24 Ssurround air";
+  margin: 5px auto;
+  padding: 0 30px;
+  font-size: 20px;
+}
+.info_line {
+  margin: 20px 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 
