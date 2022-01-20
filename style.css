@@ -296,6 +296,10 @@ h1.main_title {
 .sign_panel_ul li input[type="text" i] {
   padding: 0 10px;
 }
+.sign_panel_ul li input[type="number" i] {
+  width: 309px;
+  padding: 0 10px;
+}
 .sign_label_name {
   height: 30px;
   width: 80px;
@@ -307,11 +311,13 @@ h1.main_title {
   font-size: 14px;
 }
 .sign_p {
-  font-family: "Cafe24 Ssurround air";
-  text-align: center;
   height: 10px;
-  font-size: 10px;
   margin: 0 auto;
+  margin-top: 2px;
+  font-family: "Cafe24 Ssurround air";
+  font-size: 10px;
+  color: white;
+  text-align: center;
 }
 
 /* 공지사항 상세 */
